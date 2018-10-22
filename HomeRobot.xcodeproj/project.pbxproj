@@ -12,6 +12,8 @@
 		0432F622217C7BC000EA96A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0432F620217C7BC000EA96A1 /* Main.storyboard */; };
 		0432F624217C7BC300EA96A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0432F623217C7BC300EA96A1 /* Assets.xcassets */; };
 		0432F627217C7BC300EA96A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0432F625217C7BC300EA96A1 /* LaunchScreen.storyboard */; };
+		0432F62F217C825A00EA96A1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432F62E217C825A00EA96A1 /* ViewModel.swift */; };
+		551ADB3E160C1872E1102970 /* Pods_HomeRobot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43C09E1A1E16C7BD0E65270 /* Pods_HomeRobot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,11 @@
 		0432F623217C7BC300EA96A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0432F626217C7BC300EA96A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0432F628217C7BC300EA96A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0432F62E217C825A00EA96A1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0432F633217CBC2500EA96A1 /* HomeRobot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeRobot-Bridging-Header.h"; sourceTree = "<group>"; };
+		A43C09E1A1E16C7BD0E65270 /* Pods_HomeRobot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeRobot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F618DEA95A98B52A8DF7C1D6 /* Pods-HomeRobot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeRobot.release.xcconfig"; path = "Target Support Files/Pods-HomeRobot/Pods-HomeRobot.release.xcconfig"; sourceTree = "<group>"; };
+		FB01BD9CA7FFF4A928E799B5 /* Pods-HomeRobot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeRobot.debug.xcconfig"; path = "Target Support Files/Pods-HomeRobot/Pods-HomeRobot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551ADB3E160C1872E1102970 /* Pods_HomeRobot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,8 @@
 			children = (
 				0432F61B217C7BC000EA96A1 /* HomeRobot */,
 				0432F61A217C7BC000EA96A1 /* Products */,
+				4FF8163DCA0F5A7E24CD9AC8 /* Pods */,
+				400743B628649A85123E56BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +66,31 @@
 			children = (
 				0432F61C217C7BC000EA96A1 /* AppDelegate.swift */,
 				0432F61E217C7BC000EA96A1 /* ViewController.swift */,
+				0432F62E217C825A00EA96A1 /* ViewModel.swift */,
 				0432F620217C7BC000EA96A1 /* Main.storyboard */,
 				0432F623217C7BC300EA96A1 /* Assets.xcassets */,
 				0432F625217C7BC300EA96A1 /* LaunchScreen.storyboard */,
 				0432F628217C7BC300EA96A1 /* Info.plist */,
+				0432F633217CBC2500EA96A1 /* HomeRobot-Bridging-Header.h */,
 			);
 			path = HomeRobot;
+			sourceTree = "<group>";
+		};
+		400743B628649A85123E56BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A43C09E1A1E16C7BD0E65270 /* Pods_HomeRobot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FF8163DCA0F5A7E24CD9AC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB01BD9CA7FFF4A928E799B5 /* Pods-HomeRobot.debug.xcconfig */,
+				F618DEA95A98B52A8DF7C1D6 /* Pods-HomeRobot.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0432F62B217C7BC300EA96A1 /* Build configuration list for PBXNativeTarget "HomeRobot" */;
 			buildPhases = (
+				FD65FAC271F4F2271C2DF538 /* [CP] Check Pods Manifest.lock */,
 				0432F615217C7BC000EA96A1 /* Sources */,
 				0432F616217C7BC000EA96A1 /* Frameworks */,
 				0432F617217C7BC000EA96A1 /* Resources */,
+				1704938E117125A95EB41206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +127,7 @@
 				TargetAttributes = {
 					0432F618217C7BC000EA96A1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,12 +162,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1704938E117125A95EB41206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeRobot/Pods-HomeRobot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeRobot/Pods-HomeRobot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD65FAC271F4F2271C2DF538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeRobot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0432F615217C7BC000EA96A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0432F61F217C7BC000EA96A1 /* ViewController.swift in Sources */,
+				0432F62F217C825A00EA96A1 /* ViewModel.swift in Sources */,
 				0432F61D217C7BC000EA96A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,10 +366,13 @@
 		};
 		0432F62C217C7BC300EA96A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB01BD9CA7FFF4A928E799B5 /* Pods-HomeRobot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62236UQ8QC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HomeRobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +380,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.homesuvorov.HomeRobot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeRobot/HomeRobot-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,10 +389,13 @@
 		};
 		0432F62D217C7BC300EA96A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F618DEA95A98B52A8DF7C1D6 /* Pods-HomeRobot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62236UQ8QC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HomeRobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.homesuvorov.HomeRobot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeRobot/HomeRobot-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
